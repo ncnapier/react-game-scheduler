@@ -1,4 +1,4 @@
-export const Team = (team) => {
+const Team = (team) => {
   return (
         <div className='team'>
             <h2 >{team}</h2>
@@ -6,7 +6,10 @@ export const Team = (team) => {
   )
 }
 Team.defaultProps = {
-    team: 'Nashville Grizzlies'
+    team: 'Nashville Grizzlies',
+    color1: 'Maroon',
+    color2: 'Gold',
+    color3: 'MidnightBlue'
 }
 
 export default Team
