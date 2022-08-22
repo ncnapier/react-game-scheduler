@@ -6,8 +6,8 @@ const Header = ({title, onAdd, showAdd}) =>{
 
     return (
         <header className='header'>
-            <h1 style={{color: Team.defaultProps.color3}}>{title}</h1>
-            <Button color={showAdd ? 'red':'green'} text={showAdd  ? 'Close' : 'Add' } onClick={onAdd}/>
+            <img src={Team.defaultProps.logo} style={{width:50}} /><h1 style={{color: Team.defaultProps.color3}}>{title}</h1>
+            <Button color={showAdd ? Team.defaultProps.color1:Team.defaultProps.color3} text={showAdd  ? 'Close' : 'Add' } onClick={onAdd}/>
             
         </header>
     )

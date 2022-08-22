@@ -9,7 +9,10 @@ Team.defaultProps = {
     team: 'Nashville Grizzlies',
     color1: 'Maroon',
     color2: 'Gold',
-    color3: 'MidnightBlue'
+    color3: 'MidnightBlue',
+    gameLocation: '',
+    logo: "./logo192.png.webp"
 }
+
 
 export default Team
