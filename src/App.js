@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 import Team from './components/Team'
+import Footer from './components/Footer'
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
@@ -28,15 +29,17 @@ const toggleReminder = (id) => {
 }
 
   return (
-    <div className="container">
+    <div>
+    < section className="container">
      <Header onAdd={()=>setShowAddTask (!showAddTask)} showAdd={showAddTask}/>
      {showAddTask && <AddTask onAdd={addTask}/>}
      <h2 style={{color: Team.defaultProps.color3, alignItems: 'center', textAlign: 'center'}}>Games</h2>
      {tasks.length > 0 ?<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> :
      'No Games To Show'}
-      
+     
+    </section>
+    <Footer />
     </div>
-    
   );
 }
 

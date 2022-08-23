@@ -36,7 +36,7 @@ const AddTask = ({onAdd}) => {
         </div>
         <div className='form-control'>
             <label style={{color: Team.defaultProps.color3}}>Location</label>
-            <input type='text' placeholder="Address" value={location} onChange={(e) => setLocation(e.target.value)} />
+            <input type='text' placeholder={reminder === true ? Team.defaultProps.gameLocation : "Address"} value={location} onChange={(e) => setLocation(e.target.value)} ></input>
             
         </div>
         <div className='form-control form-control-check'>
